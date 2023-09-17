@@ -1,0 +1,35 @@
+đăng ký
+    - nhập đủ thông tin cần thiết để đăng ký: xong
+    - những tài khoản đăng ký không được trùng nhau về tên tài khoản: xong
+    - các tiêu chuẩn về tài khoản
+        + Mật khẩu phải có 8 chữ trở lên
+        + Tên tài khoản không có ký hiệu đặc biệt
+đăng nhập
+    - Yêu cầu đăng ký trước khi đăng nhập: xong
+    - Yêu cầu đăng nhập đúng với tài khoản đã đăng ký: xong
+Quên mật khẩu
+    - Là tài khoản đã đăng ký nếu không sẽ hiện ra lỗi: xong
+Lưu thông tin:
+    - Đăng ký thành công thì sẽ đc lưu vào Local Storage -> sẽ lưu vào file excel hoặc file txt
+    - có thể truy xuất ra các đăng ký của khách hàng
+Cấp bậc:
+    - Chủ cửa hàng (admin): 
+        + Mã số dành cho sếp
+        + Quyền truy cập:
+            * Danh sách nhân viên
+            * Danh sách khách hàng
+            * Danh sách sản phẩm trong kho + số lượng mỗi mặt hàng
+            * Danh sách đánh giá
+    - Nhân viên:
+        + Mã nhân viên
+        + Được cấp tài khoản cho mỗi nhân viên 
+        + quyền truy cập:
+            * Đăng bán sản phẩm 
+            * Tư vấn
+            * Kiểm tra kho hàng
+    - Khách hàng:
+        + Đăng ký
+        + Đăng nhập
+        + Mua hàng
+        + Hủy đơn hàng
+        + Theo dõi đơn hàng

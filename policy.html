@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="scroll-container">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chính sách</title>
+        <link rel="stylesheet" href="./assets/css/homehome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #main-content {
+                text-align: center;
+                margin: 20px auto;
+                max-width: 800px;
+                padding: 0 20px;
+            }
+            
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            
+            p {
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+            
+            q {
+                line-height: 1.5;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            
+            ul {
+                list-style-type: disc;
+                margin: 0;
+                padding-left: 50px;
+            }
+            
+            li {
+                margin-bottom: 5px;
+            }
+        </style>
+        <style>
+            /* Add this CSS for the footer */
+            
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            
+            #main-content {
+                flex-grow: 1;
+            }
+            
+            #footer {
+                flex-shrink: 0;
+                /* background-color: #f0f0f0; */
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <div id="header">
+            <div id="logo">
+                <a href="home.html"><img src="./assets/image/main.png" width="100px" height="100px" alt="logo"></a>
+            </div>
+            <ul id="menu">
+                <li><a href="home.html">TRANG CHỦ</a></li>
+                <li><a href="introduction.html">GIỚI THIỆU</a></li>
+                <li>
+                    <a href="product.html">SẢN PHẨM</a>
+                    <!-- <i style="color: #6E6E6E;" class="fas fa-angle-down"></i>
+              <ul id="submenu-2">
+                  <li><a href="">Điện thoại</a></li>
+                  <li><a href="">Ốp điện thoại</a></li>
+                  <li><a href="">Phụ kiện điện thoại</a></li>
+              </ul> -->
+                </li>
+                <li><a href="event.html">SỰ KIỆN</a></li>
+                <li><a href="policy.html">CHÍNH SÁCH</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+            <div id="hotline">
+                <a href=""><i class="fas fa-phone-alt"></i></a>
+                <a href="">HOTLINE: 0397235xxx</a>
+            </div>
+        </div>
+        <!-- End Header -->
+
+        <!-- Body -->
+        <div class="row">
+            <a href="home.html">Trang chủ</a>
+            <i class="fas fa-angle-right" style="font-size: 10px;"></i>
+            <a href="">Chính sách</a>
+        </div>
+        <div id="main-content">
+            <!-- Nội dung chính sách -->
+            <div id="policy-content">
+                <h3 class="title">TRUNG TÂM HỖ TRỢ TRA CỨU THÔNG TIN,HỖ TRỢ GIẢI ĐÁP CÂU HỎI</h3>
+                <ul>
+                    <li>Cửa hàng cung cấp cho khách hàng những cuốn sách mới nhất và giá cả phải chăng
+                </ul>
+                <ul>
+                    <li>Nếu muốn hay có bất kì câu hỏi nào hay bình lận đánh giá quý khach có thể đặt câu hỏi trực tiếp cho shop</li>
+                </ul>
+                <p class="paragraph">Mọi thông tin sản phẩm, quý khách vui lòng liên hệ trực tiếp với Cửa hàng để được tư vấn và hỗ trợ.</p>
+            </div>
+
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="./assets/js/script.js"></script>
+
+
+        </div>
+        <div class="comment-section">
+            <h1>Bình luận</h1>
+        </div>
+
+        <head>
+
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Arial, sans-serif;
+                }
+                
+                h1 {
+                    text-align: center;
+                }
+                
+                form {
+                    max-width: 500px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                
+                label {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                
+                textarea,
+                input[type="text"],
+                input[type="tel"],
+                input[type="email"] {
+                    width: 100%;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                
+                input[type="submit"] {
+                    padding: 10px 20px;
+                    background-color: #4CAF50;
+                    color: #fff;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                
+                input[type="submit"]:hover {
+                    background-color: #45a049;
+                }
+            </style>
+        </head>
+
+        <body>
+            <form action="submit.php" method="POST" enctype="multipart/form-data">
+                <label for="comment">Mời bạn bình luận hoặc đặt câu hỏi:</label>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+
+                <label for="photo">Gửi ảnh thực tế (tối đa 3 ảnh):</label>
+                <input type="file" id="photo" name="photo" accept="image/*" multiple>
+                <!-- 
+                <label for="fullname">Họ và tên:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+ -->
+                <input type="submit" value="GỬI">
+            </form>
+        </body>
+
+        <div class="comment-section">
+
+            <p>________________________________________________________________________________________________</p>
+            <ul class="comment-list">
+                <li id="c-54682263" data-id="54682263" onclick="selCmt(54682263);" class="no-border item idx0">
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Việt Hưng</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">"Cuốn sách này thực sự là một hành trình tinh thần đáng nhớ."</p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Việt Hưng" data-parent="54682263" onclick="ReplyComment($(this))" class="cmttl">
+                Trả lời
+                <b class="count-tl"></b>
+              </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">5 giờ trước</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Trần Thị Thuỷ Tuyên QTV</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">"Cảm ơn bạn đã đánh giá và nhận xét ạ." .
+
+                        </p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Trần Thị Thuỷ Tuyên QTV" data-parent="54682263" onclick="ReplyComment($(this))" class="cmttl">
+                Trả lời
+                <b class="count-tl"></b>
+              </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">5 giờ trước</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Việt Hưng</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">TEckhart Tolle đã mô tả một cách tuyệt vời về sự tỉnh thức và ý nghĩa thực sự của cuộc sống</p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Việt Hưng" data-parent="54682263" onclick="ReplyComment($(this))" class="cmttl">
+                Trả lời
+                <b class="count-tl"></b>
+              </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">5 giờ trước</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Việt Hưng</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">Cuốn sách đã giúp tôi hiểu rõ hơn về vai trò của tâm trí và ý thức trong cuộc sống</p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Việt Hưng" data-parent="54682263" onclick="ReplyComment($(this))" class="cmttl">
+                Trả lời
+                <b class="count-tl"></b>
+              </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">5 giờ trước</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Milan QTV</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">"Cảm ơn bạn đã đánh giá và nhận xét ạ."</p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Milan QTV" data-parent="54682263" onclick="ReplyComment($(this))" class="cmttl">
+                Trả lời
+                <b class="count-tl"></b>
+              </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">5 giờ trước</span>
+                    </div>
+                </li>
+            </ul>
+            <p>________________________________________________________________</p>
+            <ul class="comment-list">
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Nguyễn Thị My</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">Cuốn sách là một hướng dẫn thực hành tuyệt vời để sống cuộc sống với sự thấu hiểu và hạnh phúc</p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Nguyễn Thị My" onclick="ReplyComment($(this))" class="cmttl">
+                  Trả lời
+                  <b class="count-tl"></b>
+                </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">7 giờ trước</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Trần Thanh Luân QTV</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">"Cảm ơn bạn đã đánh giá và nhận xét ạ."</p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Trần Thanh Luân QTV" onclick="ReplyComment($(this))" class="cmttl">
+                  Trả lời
+                  <b class="count-tl"></b>
+                </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">6 giờ trước</span>
+                    </div>
+                </li>
+            </ul>
+            <p>________________________________________________________________</p>
+            <ul class="comment-list">
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">NAY ĐIK</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">Cuốn sách khám phá sâu về tâm linh và những khía cạnh ẩn sau cuộc sống.</p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="NAY ĐIK" onclick="ReplyComment($(this))" class="cmttl">
+                  Trả lời
+                  <b class="count-tl"></b>
+                </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">1 ngày trước</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Hồng QTV</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">Chào anh<br>"Cảm ơn bạn đã đánh giá và nhận xét ạ."</p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Hồng QTV" onclick="ReplyComment($(this))" class="cmttl">
+                  Trả lời
+                  <b class="count-tl"></b>
+                </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">1 ngày trước</span>
+                    </div>
+                </li>
+            </ul>
+            <p>________________________________________________________________</p>
+            <ul class="comment-list">
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Linh Linh</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">"Eckhart Tolle viết một cách rất rõ ràng và lôi cuốn."
+
+                        </p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Linh Linh" onclick="ReplyComment($(this))" class="cmttl">
+                  Trả lời
+                  <b class="count-tl"></b>
+                </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">2 ngày trước</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Trương Khánh Duy QTV</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">"Cảm ơn bạn đã đánh giá và nhận xét ạ."
+
+                        </p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Trương Khánh Duy QTV" onclick="ReplyComment($(this))" class="cmttl">
+                  Trả lời
+                  <b class="count-tl"></b>
+                </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">2 ngày trước</span>
+                    </div>
+                </li>
+            </ul>
+            <p>________________________________________________________________</p>
+            <ul class="comment-list">
+                <li>
+                    <div class="cmt-top">
+                        <p class="cmt-top-name">Phương</p>
+                    </div>
+                    <div class="cmt-content">
+                        <p class="cmt-txt">Cuốn sách này đã thách thức suy nghĩ của tôi và đưa ra những câu hỏi quan trọng về cuộc sống.
+                        </p>
+                    </div>
+                    <div class="cmt-command">
+                        <a href="javascript:void(0)" data-name="Phương" onclick="ReplyComment($(this))" class="cmttl">
+                  Trả lời
+                  <b class="count-tl"></b>
+                </a>
+                        <a href="javascript:void(0)" onclick="LikeComment($(this), 54682263)" class="cmtl dot-circle-ava">
+                            <i id="l-54682263" class="iconcmt-thumpup"></i>Thích
+                            <span class="hide">(<b>0</b>)</span>
+                        </a>
+                        <span class="cmtd dot-circle-ava">3 ngày trước</span>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- End body -->
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="footer-1">
+                <div class="image-container">
+                    <img src="/assets/images/" alt="">
+                </div>
+                <h5>Cửa hàng sách N2</h5>
+                <hr size="2" color="#CC9933" width="67%">
+                <div class="infor">
+                    <i class="fas fa-location-arrow"></i>
+                    <h6>Thăng Long University, Nghiêm Xuân Yêm, Hoàng Mai, Hà Nội.</h6>
+                </div>
+                <div class="infor">
+                    <i class="fas fa-phone-alt"></i>
+                    <h6>Hotline: 0912334xxx</h6>
+                </div>
+                <div class="infor">
+                    <i class="fas fa-envelope"></i>
+                    <h6>Email: nhom3@gmail.com</h6>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h5>Quy định và bảo mật</h5>
+                <hr size="2" color="#CC9933" width="90%">
+                <h6>Chính sách và quy định chung</h6>
+                <h6>Bảo mật thông tin</h6>
+                <h6>Tin tức</h6>
+                <h6>Liên hệ</h6>
+            </div>
+            <div class="footer-item">
+                <h5>Chính sách mua hàng</h5>
+                <hr size="2" color="#CC9933" width="80%">
+                <h6>Đổi trả hàng và hoàn tiền</h6>
+                <h6>Vận chuyển / Giao nhận</h6>
+                <h6>Quy định và hình thức thanh toán</h6>
+            </div>
+            <div class="footer-item">
+                <h5>Mạng xã hội</h5>
+                <hr size="2" color="#CC9933" width="85%">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-f" style="color: #fff;"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="color: #fff;"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter" style="color: #fff;"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube" style="color: #fff;"></i></a>
+            </div>
+        </div>
+        <!-- End footer -->
+    </body>
+
+</div>
+
+</html>

@@ -1,0 +1,277 @@
+#phone-brand-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#phone-brand-list li span {
+    margin-top: 5px;
+}
+.footer-item {  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+  
+#phone-brand-list {
+    width: 100%;
+}
+  
+#phone-brand-list li {
+    width: 150px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#phone-brand-list li img {
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+  
+#phone-brand-list li span {
+    display: block;
+    margin-top: 1000px;
+}
+  
+#search-warranty {
+    text-align: center;
+    padding:10px;
+}
+
+
+#search-warranty {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#search-warranty h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#search-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#search-form input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#search-form input[type="submit"] {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.result h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.result ul {
+    padding-left: 20px;
+}
+
+.result li {
+    margin-bottom: 5px;
+}
+
+.error {
+    color: red;
+}
+
+.comment-list {
+    color: #222b45;
+    margin-top: 20px;
+    max-width: 680px;
+    text-align: left;
+  }
+  
+  .comment-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .comment-list li {
+    border-bottom: 1px solid #ebf0f9;
+    padding: 15px 0;
+  }
+  
+  .comment-list .cmt-top-name {
+    font-weight: bold;
+  }
+  
+  .comment-list .cmt-txt {
+    margin-bottom: 10px;
+  }
+  
+  .comment-list .cmt-command {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment-list .cmt-command a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .comment-list .cmt-command .count-tl {
+    margin-left: 5px;
+  }
+  
+  .comment-list .cmt-command .dot-circle-ava {
+    color: #999;
+  }
+  
+  .comment-list .cmtd {
+    color: #999;
+  }
+  
+  /* Thiết lập các lớp và kiểu cho các phần tử trong HTML */
+
+/* Phần tử cố định toàn bộ section */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Phần tử bên trái */
+.leftcate {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Phần tử bên phải */
+.rightcate {
+  flex: 1;
+}
+
+/* Danh sách sự kiện bên trái */
+.calenevent {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Mỗi mục trong danh sách sự kiện */
+.calenevent li {
+  margin-bottom: 10px;
+}
+
+/* Liên kết trong danh sách sự kiện */
+.calenevent li a {
+  display: flex;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Thẻ aside trong mục liên kết */
+.calenevent li a aside {
+  margin-right: 10px;
+}
+
+/* Thẻ h3 trong mục liên kết */
+.calenevent li a h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Địa điểm và thời gian trong mục liên kết */
+.calenevent li a aside:last-child {
+  font-size: 14px;
+}
+
+/* Phần tử giới thiệu sự kiện bên phải */
+.introevent {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f00;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+/* Phần tử giới thiệu sự kiện bên phải - hình ảnh */
+.introevent img {
+  margin-right: 10px;
+}
+
+/* Phần tử giới thiệu sự kiện bên phải - nội dung */
+.introevent div {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Phần tử đã diễn ra */
+.textevented {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Danh sách sự kiện đã diễn ra */
+.eventlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Mỗi mục trong danh sách sự kiện đã diễn ra */
+.eventlist li {
+  margin-bottom: 10px;
+}
+
+/* Liên kết trong danh sách sự kiện đã diễn ra */
+.eventlist li a {
+  display: flex;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hình ảnh trong mục liên kết của sự kiện đã diễn ra */
+.eventlist li a img {
+  margin-right: 10px;
+}
+
+/* Thẻ h3 trong mục liên kết của sự kiện đã diễn ra */
+.eventlist li a h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Thời gian đăng trong mục liên kết của sự kiện đã diễn ra */
+.eventlist li a .timepost {
+  font-size: 14px;
+}

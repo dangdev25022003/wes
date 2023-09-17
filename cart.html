@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <style>
+        /* Add this CSS for the footer */
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        #main-content {
+            flex-grow: 1;
+        }
+        
+        #footer {
+            flex-shrink: 0;
+            /* background-color: #f0f0f0; */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div id="logo">
+            <a href="home.html"><img src="./assets/image/main.png" width="100px" height="100px" alt="logo"></a>
+        </div>
+        <ul id="menu">
+            <li><a href="/home.html">TRANG CHỦ</a></li>
+            <li><a href="/introduction.html">GIỚI THIỆU</a></li>
+            <li>
+                <a href="/product.html">SẢN PHẨM</a>
+
+            </li>
+            <li><a href="/event.html">SỰ KIỆN</a></li>
+            <li><a href="/policy.html">CHÍNH SÁCH</a></li>
+            <li><a href="/contact.html">LIÊN HỆ</a></li>
+        </ul>
+        <div id="hotline">
+            <a href=""><i class="fas fa-phone-alt"></i></a>
+            <a href="">HOTLINE: 0912334xxx</a>
+        </div>
+        <div id="cart">
+            <a href="/cart.html" id="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Body -->
+    <div id="main-content" style="width: 70%;margin: 0 auto;">
+        <hr size="5" color="#1E85BE" width="100%">
+        <div class="product-in-card">
+            <div class="cartempty">
+                <i class="cartnew-empty"></i>
+                <span>Không có sản phẩm nào trong giỏ hàng</span>
+                <p>Khi cần trợ giúp vui lòng gọi
+                    <a style="color: #288ad6"></a><a>0912334xxx</a> (00h - 23h59)</p>
+            </div>
+            </section>
+            <div class="error-handler">
+                <div class="popup-promo">
+                    <div class="bg-promo"></div>
+                    <div class="alert-promo">
+                        <div class="close-popup">
+                            <i></i>
+                        </div>
+                        <span> THÔNG BÁO </span>
+                        <p></p>
+                        <a href="javascript:void(0)">Đồng ý</a>
+                        <div class="resize-triggers">
+                            <div class="expand-trigger">
+                                <div style="width: 1px; height: 1px;"></div>
+                            </div>
+                            <div class="contract-trigger"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-popup">
+                    <div class="common-popup-bg"></div>
+                    <div class="popup-content">
+                        <!---->
+                        <div></div>
+                        <button>Đóng</button>
+                    </div>
+                </div>
+                <div class="popup-promo">
+                    <div class="bg-promo"></div>
+                    <div class="loyalty-confirm-popup__content">
+                        <span class="loyalty-confirm-popup__content__close">
+                    <i class="cartnew-cheque-message-close"></i>
+                </span>
+                        <span class="loyalty-confirm-popup__content__message"></span>
+                        <div class="loyalty-confirm-popup__content__actions">
+                            <span class="loyalty-confirm-popup__content__actions__btn-ok btn-orange btn">Kiểm tra ngay</span>
+                        </div>
+                        <div class="resize-triggers">
+                            <div class="expand-trigger">
+                                <div style="width: 1px; height: 1px;"></div>
+                            </div>
+                            <div class="contract-trigger"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="loading-cart">
+                <span class="cswrap">
+                <span class="csdot"></span>
+                <span class="csdot"></span>
+                <span class="csdot"></span>
+                </span>
+            </div>
+        </div>
+        <button style="color: #444444;background-color: #f2f2f2;border: #f2f2f2;padding: 10px;margin: 20px 0 20px 0;" onclick="window.location.href='/home.html'"><strong >Quay về trang chủ</strong></button>
+        <section>
+            <!---->
+
+    </div>
+    <!-- End body -->
+
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="footer-1">
+            <div class="image-container">
+                <img src="/assets/images/" alt="">
+            </div>
+            <h5>Cửa hàng sách N2</h5>
+            <hr size="2" color="#CC9933" width="67%">
+            <div class="infor">
+                <i class="fas fa-location-arrow"></i>
+                <h6>Thăng Long University, Nghiêm Xuân Yêm, Hoàng Mai, Hà Nội.</h6>
+            </div>
+            <div class="infor">
+                <i class="fas fa-phone-alt"></i>
+                <h6>Hotline: 0397235xxx</h6>
+            </div>
+            <div class="infor">
+                <i class="fas fa-envelope"></i>
+                <h6>Email: pdang0952@gmail.com</h6>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h5>Quy định và bảo mật</h5>
+            <hr size="2" color="#CC9933" width="90%">
+            <h6>Chính sách và quy định chung</h6>
+            <h6>Bảo mật thông tin</h6>
+            <h6>Tin tức</h6>
+            <h6>Liên hệ</h6>
+        </div>
+        <div class="footer-item">
+            <h5>Chính sách mua hàng</h5>
+            <hr size="2" color="#CC9933" width="80%">
+            <h6>Đổi trả hàng và hoàn tiền</h6>
+            <h6>Vận chuyển / Giao nhận</h6>
+            <h6>Quy định và hình thức thanh toán</h6>
+        </div>
+        <div class="footer-item">
+            <h5>Mạng xã hội</h5>
+            <hr size="2" color="#CC9933" width="85%">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f" style="color: #fff;"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="color: #fff;"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter" style="color: #fff;"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube" style="color: #fff;"></i></a>
+        </div>
+    </div>
+    <!-- End footer -->
+</body>
+
+</html>

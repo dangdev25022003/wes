@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    width: 100%
+    
+}
+
+h2 {
+    text-align: center;
+    display: none;
+}
+
+.login-form,
+.register-form {
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-login {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #f2f2f2;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+}
+
+.button-login:first-child {
+    margin-left: 0;
+}
+
+.button-login:last-child {
+    margin-right: 0;
+}
+
+.button-login:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+.login-form,
+.register-form,
+#localStorageTable,
+h3,
+#forgotPasswordButton {
+  display: none;
+}
+  
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.register-form input[type="text"],
+.register-form input[type="password"] {
+  width: 50%; /* Adjust the width to leave space for padding */
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.login-form button,
+.register-form button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #FFC312;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    
+}
+
+/* phần đăng ký */
+
+/* CSS cho phần form đăng ký */
+
+.register-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.register-form button[type="submit"]:hover {
+    background-color: #FFC312;
+}
+
+/* Quên mật khẩu */
+/* CSS cho nút "Quên mật khẩu" */
+ 
+  #forgotPasswordButton:hover {
+    background-color: #ddd;
+  }
+  
+  #forgotPasswordButton {
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.forgot-password-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  /* CSS cho hộp thoại prompt */
+  .prompt-dialog {
+    width: 300px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+
+  }
+  
+  .prompt-dialog input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .prompt-dialog button {
+    background-color: #FFC312;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .prompt-dialog button:hover {
+    background-color: #FFC312;
+  }
+
+.forgot-password-button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    color: #333333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.forgot-password-button:hover {
+    background-color: #ddd;
+}
+
+.forgot-password-button:focus {
+    outline: none;
+}
+
+/* nút bấm */
+
+.button-login {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FFC312;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-login:hover {
+  background-color: #ffffff;
+}
+
+.button-login:focus {
+  outline: none;
+}
+
+.forgot-password-button {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  color: #333333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.forgot-password-button:hover {
+  background-color: #ddd;
+}
+
+.forgot-password-button:focus {
+  outline: none;
+}

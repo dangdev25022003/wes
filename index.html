@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Đăng nhập và Local Storage</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button-login">Đăng nhập</button>
+        <button class="button-login">Đăng ký</button>
+        <button class="button-login">Quên mật khẩu</button>
+    </div>
+    
+    <!-- <h2 class="dangnhap">Đăng nhập</h2> -->
+    <form class="login-form" id="loginForm">
+        <label class = "user" for="username">Tên người dùng:</label>
+        <input type="text" placeholder="Name" id="username" required>
+        <label class = "pass" for="password">Mật khẩu:</label>
+        <input type="password" placeholder="password" id="password" required>
+        <button typ e="submit" onclick="login(event)">Đăng nhập</button>
+    </form>
+
+    <!-- <h2 class="dangky">Đăng ký</h2> -->
+    <form class="register-form" id="registerForm">
+        <label for="registerUsername">Tên người dùng:</label>
+        <input type="text" placeholder="Name" id="registerUsername" required>
+        <label for="registerPassword">Mật khẩu:</label>
+        <input type="password" placeholder="password" id="registerPassword" required>
+        <label for="confirmPassword">Xác nhận mật khẩu:</label>
+        <input type="password" placeholder="password" id="confirmPassword" required>
+        <button type="submit" value="SEND" onclick="register(event)">Đăng ký</button>
+    </form>
+    <button type="submit" id="forgotPasswordButton" class="forgotpassword--button">Quên mật khẩu</button>
+
+    <h3>Local Storage</h3>
+    <table id="localStorageTable">
+        <thead>
+            <tr>
+                <th>account</th>
+                <th>password</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="save.js"></script>
+    <!-- <a href="/lc.html">web</a> -->
+</body>
+</html>

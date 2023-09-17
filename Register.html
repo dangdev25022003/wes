@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Register</button>
+            </div>
+        </form>
+
+        <script>
+            // Register form submission
+            document.getElementById('register-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirm-password').value;
+
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match');
+                    return;
+                } else {
+                    alert('Sign Up Success -Chào mừng bạn đến với Shop sách Nhóm 2');
+                    return;
+                }
+
+
+                // Here you can send the registration data to your server using fetch or an AJAX request
+                // For this example, we'll just log the data
+                console.log('Registration Data:', {
+                    username,
+                    password
+                });
+
+                // Display registration success message
+                const registrationSuccessMessage = document.getElementById('registration-success');
+                registrationSuccessMessage.textContent = 'Registration successful. You can now log in.';
+
+                // Clear the form
+                this.reset();
+            });
+
+            // Login form submission
+            document.getElementById('login-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const loginUsername = document.getElementById('login-username').value;
+                const loginPassword = document.getElementById('login-password').value;
+
+                // Here you can send the login data to your server and validate it
+                // For this example, we'll just log the data
+                console.log('Login Data:', {
+                    loginUsername,
+                    loginPassword
+                });
+
+                // Clear the form
+                this.reset();
+            });
+        </script>
+</body>
+
+</html>

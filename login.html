@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="login-container">
+        <div>
+            <div class="logo">
+                <span><img src="./assets/image/PNGkhothietke.net-02706.png" width="100px" height="100px" alt="logo">BookStore</span>
+            </div>
+            <div class="register">
+                <div>Don't have an account?</div>
+                <p>Sign up to access all the features of our service. The place to shop for your books. It's free</p>
+                <div class="social">
+                    <a data-toggle="tooltip" title="Facebook" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a data-toggle="tooltip" title="Google" href=""><i class="fab fa-google"></i></a>
+                    <a data-toggle="tooltip" title="Pinterest" href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a data-toggle="tooltip" title="Github" href=""><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-login">
+            <form action="" method="POST" class="form" id="form-2">
+                <h3 class="heading">Sign up</h3>
+                <div class="spacer"></div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Enter password" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group f-term">
+                    <input id="agree" name="agree" type="checkbox" class="form-control">
+                    <label for="agree" class="form-label">I agree to the all statements in <a href="">Terms of service</a></label>
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="sign-up">
+                    <div>
+
+                        <input id="myButton" type="submit" class="btn custom-btn" value="Login">
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // ...
+
+                                Validator({
+                                    form: '#form-2',
+                                    formGroupSelector: '.form-group',
+                                    errorSelector: '.form-message',
+                                    rules: [
+                                        Validator.isEmail('#email'),
+                                        Validator.minLength('#password', 6),
+                                    ],
+                                    onSubmit: function(data) {
+                                        // Call API or handle form data here
+                                        console.log(data);
+
+                                        // Redirect to home.html
+                                        window.location.href = 'file:///D:/html_css/js/BTL/home.html';
+                                    }
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+                <i>Don't have an account? <a href="register.html">Register here</a></i>
+        </div>
+        </form>
+    </div>
+    </div>
+
+
+    <script src=" ./assets/js/validate.js "></script>
+    <script>
+        // Select all elements with data-toggle="tooltips " in the document
+        $('[data-toggle="tooltip "]').tooltip();
+
+        // Select a specified element
+        // $('#myTooltip').tooltip();
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mong muốn của chúng ta
+            Validator({
+                form: '#form-1',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+                    Validator.isEmail('#email'),
+                    Validator.minLength('#password', 6),
+                    Validator.isRequired('#password_confirmation'),
+                    Validator.isConfirmed('#password_confirmation', function() {
+                        return document.querySelector('#form-1 #password').value;
+                    }, 'Mật khẩu nhập lại không chính xác')
+                ],
+                onSubmit: function(data) {
+                    // Call API
+                    console.log(data);
+                }
+            });
+
+
+            Validator({
+                form: '#form-2',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isEmail('#email'),
+                    Validator.minLength('#password', 6),
+                ],
+                onSubmit: function(data) {
+                    // Call API
+                    console.log(data);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

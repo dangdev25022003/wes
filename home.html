@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="./assets/css/home1.css">
+    <link rel="stylesheet" href="./assets/css/stylecart.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <style>
+        .product {
+            position: relative;
+        }
+        
+        .product-popup {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+            width: 200px;
+            background-color: #f5f5f5;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .product:hover .product-popup {
+            display: block;
+        }
+        /* .money{
+            display: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <a href="home.html"><img src="./assets/image/main.png" width="100px" height="100px" alt="logo"></a>
+        </div>
+
+        <ul id="menu">
+            <li><a href="home.html">TRANG CHỦ</a></li>
+            <li><a href="introduction.html">GIỚI THIỆU</a></li>
+            <li>
+                <a href="product.html">SẢN PHẨM</a>
+            </li>
+            <li><a href="event.html">SỰ KIỆN</a></li>
+            <li><a href="policy.html">CHÍNH SÁCH</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+        </ul>
+        <div id="hotline">
+            <a href=""><i class="fas fa-phone-alt"></i></a>
+            <a href="">HOTLINE: 0397235xxx</a>
+        </div>
+        <div id="cart">
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items"></div>
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Tổng Cộng:</strong>
+                        <span class="cart-total-price">0VNĐ</span>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="main-content">
+        <div id="slider">
+            <img src="./assets/image/reading.jpg" width="100%" alt="">
+        </div>
+        <div id="title">
+            <h4 style="color: #666666; font-size: 26px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; ">
+                CUỐN SÁCH NỔI BẬT TRONG TUẦN</h4>
+        </div>
+        <div class="wrapper">
+            <li class="main-product">
+                <div class="img-product">
+                    <div class="product">
+                        <img class="img-prd" src="./img_product/sach-cach-song-214x300.png" alt="" width="45%" style="padding: 18px;">
+                        <div class="product-popup">
+                            <img class="product-image" src="./img_back/anh1.PNG" width="600px" alt="Ảnh sản phẩm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">TÊN SẢN PHẨM: CÁCH SỐNG</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">250.000đ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="main-product">
+                <div class="img-product">
+                    <div class="product">
+                        <img class="img-prd" src="./img_product/sach-cai-dung-cua-thanh-nhan-201x300.png" alt="" width="45%" style="padding: 18px;">
+                        <div class="product-popup">
+                            <img class="product-image" src="./img_back/anh2.png" width="600px" alt="Ảnh sản phẩm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">TÊN TÁC PHẨM: CÁI DŨNG CỦA THÁNH NHÂN</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">190.000đ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="main-product">
+                <div class="img-product">
+                    <div class="product">
+                        <img class="img-prd" src="./img_product/sach-di-tim-le-song-208x300.png" alt="" width="45%" style="padding: 18px;">
+                        <div class="product-popup">
+                            <img class="product-image" src="./img_back/anh3.PNG" width="600px" alt="Ảnh sản phẩm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">TÊN TÁC PHẨM: ĐI TÌM LẼ SỐNG</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">250.000đ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="main-product">
+                <div class="img-product">
+                    <div class="product">
+                        <img class="img-prd" src="./img_product/sach-di-tim-ly-do-thuc-day-217x300.png" alt="" width="45%" style="padding: 18px;">
+                        <div class="product-popup">
+                            <img class="product-image" src="./img_back/anh4.PNG" width="600px" alt="Ảnh sản phẩm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">TÊN TÁC PHẨM: ĐI TÌM LÝ DO THỨC DẬY MỖI SÁNG</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">190.000đ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+
+        </div>
+        <div id="title">
+            <h4 style="color: #666666; font-size: 26px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; ">
+                CUỐN SÁCH BÁN CHẠY </h4>
+        </div>
+        <div class="wrapper">
+            <li class="main-product">
+                <div class="img-product">
+                    <div class="product">
+                        <img class="img-prd" src="./img_product/sach-doi-ngan-dung-ngu-dai-190x300.png" alt="" width="45%" style="padding: 18px;">
+                        <div class="product-popup">
+                            <img class="product-image" src="./img_back/anh5.PNG" width="600px" alt="Ảnh sản phẩm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">TÊN TÁC PHẨM: ĐỜI NGẮN ĐỪNG NGỦ DÀI</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">250.000đ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="main-product">
+                <div class="img-product">
+                    <div class="product">
+                        <img class="img-prd" src="./img_product/sach-gian-198x300.png" alt="" width="45%" style="padding: 18px;">
+                        <div class="product-popup">
+                            <img class="product-image" src="./img_back/anh6.PNG" width="600px" alt="Ảnh sản phẩm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">TÊN TÁC PHẨM: GIẬN</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">90.000đ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li class="main-product">
+                <div class="img-product">
+                    <div class="product">
+                        <img class="img-prd" src="./img_product/sach-hieu-ve-trai-tim-187x300.png" alt="" width="45%" style="padding: 18px;">
+                        <div class="product-popup">
+                            <img class="product-image" src="./img_back/anh7.PNG" width="600px" alt="Ảnh sản phẩm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">TÊN TÁC PHẨM: HIỂU VỀ TRÁI TIM</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">100.000đ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li class="main-product">
+                <div class="img-product">
+                    <div class="product">
+                        <img class="img-prd" src="./img_product/sach-khi-moi-diem-tua-deu-mat-191x300.png" alt="" width="45%" style="padding: 18px;">
+                        <div class="product-popup">
+                            <img class="product-image" src="./img_back/anh8.PNG" width="600px" alt="Ảnh sản phẩm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">TÊN TÁC PHẨM: KHI MỌI ĐIỂM TỰA ĐỀU MẤT</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">140.000đ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+        </div>
+        <div class="card">
+            <div class="aboutus">
+                <h3 style="padding: 20px;text-align: left;">
+                    VỀ CHÚNG TÔI
+                    <hr size="2" color="#CC9933" width="30%">
+                </h3>
+                <p style="padding-left: 3px;text-align: left;">Với Nhóm 1-Chào mừng bạn đến với nhóm "Nhóm 1"! Chúng tôi là một nhóm đam mê về văn hóa đọc và sách báo, và chúng tôi đã thực hiện một dự án thú vị: chúng tôi đã tạo ra một trang web bán sách trực tuyến đầy độc đáo. Nhóm của chúng tôi
+                    chưa bao giờ ngừng khám phá thế giới của tri thức và từng cuốn sách có chứa những trang viết đầy ý nghĩa. Với niềm đam mê và kiến thức về văn hóa đọc, chúng tôi tự hào giới thiệu đến bạn sưu tập sách đa dạng, từ tiểu thuyết, sách khoa
+                    học, đến sách học thuật và nhiều thể loại khác nữa. Chúng tôi đã tận dụng công nghệ để đem sách đến gần hơn với bạn. Trang web của chúng tôi không chỉ là nơi để mua sắm sách, mà còn là một cộng đồng yêu sách, nơi bạn có thể đọc đánh
+                    giá sách, tham gia vào các cuộc thảo luận, và chia sẻ đam mê với những người khác có cùng sở thích. Cùng "Nhóm 1" khám phá thế giới của từng trang sách và tìm kiếm những tác phẩm thú vị để bổ sung vào thư viện cá nhân của bạn hoặc
+                    tặng cho người thân yêu. Chúng tôi rất mong được chia sẻ niềm đam mê đọc sách với bạn. Hãy tham gia cùng chúng tôi và khám phá thế giới bất tận của tri thức và sự phiêu lưu trong từng cuốn sách! </p>
+                </br>
+                <hr size="2" color="#CC9933" width="95%">
+                <h4 style="padding: 20px 20px 0 20px ;text-align: left;">HỖ TRỢ TRỰC TUYẾN</h4>
+                <h3 style="padding-left: 20px; font-size: 30px;text-align: left;">039723xxx</h3>
+                </br>
+                <h5 style="padding-left: 20px;text-align: left;">Chúng tôi hỗ trợ khách hành 24/7. Tất cả các ngày trong tuần kể cả ngày lễ.
+                </h5>
+            </div>
+            <img style="max-width: 20%; position: absolute; margin-top: calc(10% - 530px); margin-left: calc(50% - 20px);" src="assets/images/" alt="">
+            <img style="max-width: 17%; position: absolute; margin-top: calc(10% - 450px); margin-left: calc(50% + 200px);" src="assets/images/" alt="">
+            <img style="max-width: 12%; position: absolute; margin-top: calc(10% - 350px); margin-left: calc(50% + 100px);" src="assets/images/" alt="">
+        </div>
+    </div>
+
+    <div class="customer">
+        <div id="title">
+            <h4 style="color: #666666; font-size: 26px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; ">
+                KHÁCH HÀNG CỦA CHÚNG TÔI</h4>
+        </div>
+        <div class="container" style="width: 80%; padding: 20px;">
+            <img src="assets/images/" alt="">
+            <img src="assets/images/" alt="">
+            <img src="assets/images/" alt="">
+            <img src="assets/images/" alt="">
+            <img src="assets/images/" alt="">
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-1">
+            <div class="image-container">
+                <img src="assets/images/" alt="">
+            </div>
+            <h5 style="text-align: left;">Cửa hàng sách N2</h5>
+            <hr size="2" color="#CC9933" width="67%">
+            <div class="infor">
+                <i class="fas fa-location-arrow"></i>
+                <h6 style="text-align: left;">Thăng Long University, Nghiêm Xuân Yêm, Hoàng Mai, Hà Nội.</h6>
+            </div>
+            <div class="infor">
+                <i class="fas fa-phone-alt"></i>
+                <h6 style="text-align: left;">Hotline: 0397235xxx</h6>
+            </div>
+            <div class="infor">
+                <i class="fas fa-envelope"></i>
+                <h6 style="text-align: left;">Email: pdang0952@gmail.com</h6>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h5 style="text-align: left;">Quy định và bảo mật</h5>
+            <hr size="2" color="#CC9933" width="90%">
+            <h6 style="text-align: left;">Chính sách và quy định chung</h6>
+            <h6 style="text-align: left;">Bảo mật thông tin</h6>
+            <h6 style="text-align: left;">Tin tức</h6>
+            <h6 style="text-align: left;">Liên hệ</h6>
+        </div>
+        <div class="footer-item">
+            <h5 style="text-align: left;">Chính sách mua hàng</h5>
+            <hr size="2" color="#CC9933" width="80%">
+            <h6 style="text-align: left;">Đổi trả hàng và hoàn tiền</h6>
+            <h6 style="text-align: left;">Vận chuyển / Giao nhận</h6>
+            <h6 style="text-align: left;">Quy định và hình thức thanh toán</h6>
+        </div>
+        <div class="footer-item">
+            <h5 style="text-align: left;">Mạng xã hội</h5>
+            <hr size="2" color="#CC9933" width="85%">
+            <a href="https://www.facebook.com/profile.php?id=100027985095802"><i class="fab fa-facebook-f" style="color: #fff;"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="color: #fff;"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter" style="color: #fff;"></i></a>
+            <a href="https://www.youtube.com/@dangpham-2k3"><i class="fab fa-youtube" style="color: #fff;"></i></a>
+        </div>
+    </div>
+</body>
+<script src="assets/js/product.js"></script>
+
+</html>
