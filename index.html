@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Đăng nhập và Local Storage</title>
     <style>
@@ -10,58 +12,79 @@
             border-collapse: collapse;
             width: 100%;
         }
-
-        th, td {
+        
+        th,
+        td {
             border: 1px solid black;
             padding: 8px;
             text-align: left;
         }
-
+        
         th {
             background-color: #f2f2f2;
         }
     </style>
 </head>
+
 <body>
-    <div class="button-container">
-        <button class="button-login">Đăng nhập</button>
-        <button class="button-login">Đăng ký</button>
-        <button class="button-login">Quên mật khẩu</button>
-    </div>
-    
-    <!-- <h2 class="dangnhap">Đăng nhập</h2> -->
-    <form class="login-form" id="loginForm">
-        <label class = "user" for="username">Tên người dùng:</label>
-        <input type="text" placeholder="Name" id="username" required>
-        <label class = "pass" for="password">Mật khẩu:</label>
-        <input type="password" placeholder="password" id="password" required>
-        <button typ e="submit" onclick="login(event)">Đăng nhập</button>
-    </form>
+    <div class="overlay"></div>
+    <div class="login-container">
+        <div>
+            <div class="logo">
+                <span><img src="./assets/image/PNGkhothietke.net-02706.png" width="100px" height="100px" alt="logo">BookStore</span>
+            </div>
+            <div class="register">
+                <div>Don't have an account?</div>
+                <p>Sign up to access all the features of our service. The place to shop for your books. It's free</p>
+                <div class="social">
+                    <a data-toggle="tooltip" title="Facebook" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a data-toggle="tooltip" title="Google" href=""><i class="fab fa-google"></i></a>
+                    <a data-toggle="tooltip" title="Pinterest" href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a data-toggle="tooltip" title="Github" href=""><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
 
-    <!-- <h2 class="dangky">Đăng ký</h2> -->
-    <form class="register-form" id="registerForm">
-        <label for="registerUsername">Tên người dùng:</label>
-        <input type="text" placeholder="Name" id="registerUsername" required>
-        <label for="registerPassword">Mật khẩu:</label>
-        <input type="password" placeholder="password" id="registerPassword" required>
-        <label for="confirmPassword">Xác nhận mật khẩu:</label>
-        <input type="password" placeholder="password" id="confirmPassword" required>
-        <button type="submit" value="SEND" onclick="register(event)">Đăng ký</button>
-    </form>
-    <button type="submit" id="forgotPasswordButton" class="forgotpassword--button">Quên mật khẩu</button>
+        <div class="button-container">
+            <button class="button-login">Đăng nhập</button>
+            <button class="button-login">Đăng ký</button>
+            <button class="button-login">Quên mật khẩu</button>
+        </div>
 
-    <h3>Local Storage</h3>
-    <table id="localStorageTable">
-        <thead>
-            <tr>
-                <th>account</th>
-                <th>password</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+        <!-- <h2 class="dangnhap">Đăng nhập</h2> -->
+        <form class="login-form" id="loginForm">
+            <label class="user" for="username">Tên người dùng:</label>
+            <input type="text" placeholder="Name" id="username" required>
+            <label class="pass" for="password">Mật khẩu:</label>
+            <input type="password" placeholder="password" id="password" required>
+            <button typ e="submit" onclick="login(event)">Đăng nhập</button>
+        </form>
 
-    <script src="save.js"></script>
-    <!-- <a href="/lc.html">web</a> -->
+        <!-- <h2 class="dangky">Đăng ký</h2> -->
+        <form class="register-form" id="registerForm">
+            <label for="registerUsername">Tên người dùng:</label>
+            <input type="text" placeholder="Name" id="registerUsername" required>
+            <label for="registerPassword">Mật khẩu:</label>
+            <input type="password" placeholder="password" id="registerPassword" required>
+            <label for="confirmPassword">Xác nhận mật khẩu:</label>
+            <input type="password" placeholder="password" id="confirmPassword" required>
+            <button type="submit" value="SEND" onclick="register(event)">Đăng ký</button>
+        </form>
+        <button type="submit" id="forgotPasswordButton" class="forgotpassword--button">Quên mật khẩu</button>
+
+        <h3>Local Storage</h3>
+        <table id="localStorageTable">
+            <thead>
+                <tr>
+                    <th>account</th>
+                    <th>password</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <script src="save.js"></script>
+        <!-- <a href="/lc.html">web</a> -->
 </body>
+
 </html>
